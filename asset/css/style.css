@@ -1,0 +1,543 @@
+body {
+    margin: 0%;
+    color: white;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    color: orange;
+    font-weight:600;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: orange;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .booking-form-header > h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: orange;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-transform:initial;
+    line-height: 1.6;
+    padding: 1%;
+  }
+    
+    .header-container {
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+      margin: 0;
+      flex-wrap: wrap;
+      height: max-content;
+      text-align: center;
+      justify-content: center;
+    }
+  
+   #to-let {
+      background-color: orange;
+      color:black;
+      font-size: 2rem;
+      width: 130px;
+      padding: 1.4rem 0.5rem 0.5rem 0.5rem;
+      margin-left: 0;
+      text-transform: uppercase;
+      font-weight: 600;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .header {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .header > p {
+      font-size: 1.1rem;
+      font-weight: normal;
+      line-height: 1.6;
+      text-transform: uppercase;
+    }
+  
+  
+  .nav-container {
+    width: 100%;
+    background-color: orange;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+    
+    nav {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  
+    .sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+    }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  
+  nav li {
+    flex:none;
+    line-height: 1.6;
+    border-right: honeydew solid 1px;
+    padding-left: 1.5%;
+    padding-right: 1.5%; 
+  }
+  
+  a:link {
+    text-decoration: none;
+    color: black;
+  }
+  a:visited {
+    color: grey;
+  }
+  
+  a:hover {
+    color:white;
+  }
+  
+  a:active {
+    color: #fff;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* picture slider CSS*/
+  .picture-slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 600px;
+    flex-grow: 1;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  .slider-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+  }
+  
+  .menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: orange;
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: left 0s .75s;
+  }
+  
+  [id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .65s ease-out;
+  }
+  
+  .slide-1 {
+    background-image: url("/asset/images/front.jpeg");
+  }
+  
+  .slide-2 {
+    background-image: url("/asset/images/villa.jpeg");
+  }
+  
+  .slide-3 {
+    background-image: url("/asset/images/afternoonshade.jpeg");
+  }
+  
+  .slide-4 {
+    background-image: url("/asset/images/livingroom.jpg");
+  }
+  
+  .slide-5 {
+    background-image: url("/asset/images/garden.jpeg");
+  }
+  
+  .slide-6 {
+    background-image: url("/asset/images/view.jpeg");
+  }
+  
+  .slide-7 {
+    background-image: url("/asset/images/sealing.jpg");
+  }
+  
+  .slide-8 {
+    background-image: url("/asset/images/side.jpeg");
+  }
+  
+  .slide-9 {
+    background-image: url("/asset/images/livingroom2.jpg");
+  }
+  
+  .slide-10 {
+    background-image: url("/asset/images/diningtable.jpg");
+  }
+  
+  /* Description section*/
+  #description {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #description > div {
+    width: 46%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    line-height: 1.6;
+    margin: 1%;
+    padding: 1%;
+    font-size: 1rem;
+  }
+  
+  @media (min-width: 375px) {
+    #description > div {
+      min-width: 375px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  /*Specification section*/
+  #specification {
+    width: 100%;
+    background-color: orange;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .specification-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .specification-header > h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .specification-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .specification-info > div {
+    color: black;
+  }
+  
+  
+  .specification-info > div {
+    width: 29%;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+    margin: 1%;
+    padding: 1%;
+    font-size: 1.5rem;
+  }
+  
+  @media (min-width: 375px) {
+    .specification-info > div {
+      min-width: 375px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  #specification img {
+    max-width: 25%;
+    min-width: 25%;
+  }
+  
+  #location-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    text-align: center;
+  }
+  
+  .location-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-info > div {
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+    margin: 0.5%;
+    padding: 0.5%;
+    font-size: 1.5rem;
+  }
+  
+  @media (min-width: 375px) {
+    .location-info > div {
+      min-width: 375px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  #booking-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    background-image: url("/asset/images/garden.jpeg");
+    background-attachment: fixed;
+   background-size: cover;
+  }
+  
+  .booking-form-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .booking-form-header > h2 {
+    color: black;
+  }
+  
+  .full-width {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .full-width > div {
+    width: 80%;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 1.5rem;
+    padding: 1%;
+  }
+  
+  input[type=text], textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    line-height: 1.6;
+  }
+  
+  input[type=submit] {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  input[type=reset] {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  .button {
+    background-color: orange;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
+  input[type=email] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  input[type=date] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  input[type=time] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  fieldset {
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  legend {
+    background-color: orange;
+    color: black;
+    padding: 5px 5px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  #footer {
+    background-color: orange;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  #footer > div {
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+  }
+  
+  #footer > p {
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-transform:initial;
+    color: black;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  
+  
+  
