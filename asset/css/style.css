@@ -1,76 +1,78 @@
 body {
+    width: 100%;
     margin: 0%;
     color: white;
-    width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  h1 {
+  .heading-one {
     text-transform: uppercase;
     color: orange;
-    font-weight:600;
-  }
-  
-  h1 {
     font-size: 2rem;
+    font-weight:600;
+    padding-top: 20px;
   }
   
-  h2 {
+ /* h2 {
     font-size: 1.5rem;
     font-weight: 600;
     color: orange;
     text-transform: uppercase;
-  }
+  }*/
   
   h3 {
     font-size: 1.2rem;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  .booking-form-header > h2 {
-    font-size: 1.5rem;
+  .heading-two {
+    font-size: 1.3rem;
     font-weight: 600;
     color: orange;
     text-transform: uppercase;
+    text-align: center;
   }
-  
+
   p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: normal;
-    text-transform:initial;
-    line-height: 1.6;
-    padding: 1%;
+    text-transform: initial;
+    line-height: 1.4;
+    padding: 4px;
   }
     
     .header-container {
-      display: flex;
-      flex-direction: row;
       background-color: black;
-      margin: 0;
-      flex-wrap: wrap;
-      height: max-content;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
       text-align: center;
       justify-content: center;
     }
-  
+
+
+
+
    #to-let {
-      background-color: orange;
-      color:black;
-      font-size: 2rem;
-      width: 130px;
-      padding: 1.4rem 0.5rem 0.5rem 0.5rem;
-      margin-left: 0;
-      text-transform: uppercase;
-      font-weight: 600;
-      align-items: center;
-      text-align: center;
+     background-color: grey;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
     }
+
+      @media screen and (max-width: 600px) {
+        .header {
+          width: 100%;
+        }
+      }
+
+      
     
     .header {
-      margin-left: 2rem;
-      margin-right: 2rem;
       justify-content: center;
       align-items: center;
       text-align: center;
@@ -87,18 +89,25 @@ body {
   .nav-container {
     width: 100%;
     background-color: orange;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+
+    @media screen and (max-width: 600px) {
+      .nav-container > div {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
     
     nav {
       text-transform: uppercase;
       text-decoration: none;
       font-weight: 600;
     }
+        
   
     .sticky {
       position: -webkit-sticky;
@@ -140,136 +149,65 @@ body {
   }
   
   .content-container {
+    width:100%;
     display: flex;
     flex-direction: column;
   }
-  
-  /* picture slider CSS*/
-  .picture-slider {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 600px;
-    flex-grow: 1;
+
+  @media screen and (max-width: 600px) {
+    .content-container > div {
+      width: 100%;
+      margin-top: 0;
+    }
   }
-  
-  img {
+
+  .location-info img {
+    width: 100%;
+  }
+
+  #description img {
     max-width: 100%;
   }
-  
-  .slider-container{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    overflow: hidden; 
-    text-align: center;
-  }
-  
-  .menu {
-    position: absolute;
-    left: 0;
-    z-index: 900;
-    width: 100%;
-    bottom: 0;
-  }
-  
-  .menu label {
-    cursor: pointer;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background: orange;
-    border-radius: 50px;
-    margin: 0 .2em 1em;
-  }
-  
-  .slide {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    z-index: 10;
-    padding: 8em 1em 0;
-    background-size: cover;
-    background-position: 50% 50%;
-    transition: left 0s .75s;
-  }
-  
-  [id^="slide"]:checked + .slide {
-    left: 0;
-    z-index: 100;
-    transition: left .65s ease-out;
-  }
-  
-  .slide-1 {
-    background-image: url("/asset/images/front.jpeg");
-  }
-  
-  .slide-2 {
-    background-image: url("/asset/images/villa.jpeg");
-  }
-  
-  .slide-3 {
-    background-image: url("/asset/images/afternoonshade.jpeg");
-  }
-  
-  .slide-4 {
-    background-image: url("/asset/images/livingroom.jpg");
-  }
-  
-  .slide-5 {
-    background-image: url("/asset/images/garden.jpeg");
-  }
-  
-  .slide-6 {
-    background-image: url("/asset/images/view.jpeg");
-  }
-  
-  .slide-7 {
-    background-image: url("/asset/images/sealing.jpg");
-  }
-  
-  .slide-8 {
-    background-image: url("/asset/images/side.jpeg");
-  }
-  
-  .slide-9 {
-    background-image: url("/asset/images/livingroom2.jpg");
-  }
-  
-  .slide-10 {
-    background-image: url("/asset/images/diningtable.jpg");
-  }
-  
+
   /* Description section*/
   #description {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     background-color: black;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
+    margin: 0%;
   }
-  
-  #description > div {
-    width: 46%;
-    justify-content: center;
-    align-items: center;
+
+  .description-text{
+    width: 56%;
     text-align: left;
-    line-height: 1.6;
-    margin: 1%;
-    padding: 1%;
-    font-size: 1rem;
   }
-  
-  @media (min-width: 375px) {
+
+  .description-image{
+    width: 35%;
+    float: right;
+  }
+
+  .padding-left {
+    padding-left: 75px;
+    float: left;
+  }
+
+  .padding-top-25 {
+    padding-top: 30px;
+  }
+
+  .padding-bottom-25 {
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: 600px) {
     #description > div {
-      min-width: 375px;
-      justify-content: center;
-      align-items: center;
+      width: 100%;
+      margin-top: 0;
     }
   }
   
@@ -277,7 +215,6 @@ body {
   #specification {
     width: 100%;
     background-color: orange;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -310,30 +247,24 @@ body {
     text-align: center;
     align-items: center;
     justify-content: center;
-  }
+  }  
   
   .specification-info > div {
-    color: black;
-  }
-  
-  
-  .specification-info > div {
-    width: 29%;
+    width: 33%;
     border-radius: 6px;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     line-height: 1.6;
-    margin: 1%;
     padding: 1%;
     font-size: 1.5rem;
+    color: black;
   }
-  
-  @media (min-width: 375px) {
+
+  @media screen and (max-width: 600px) {
     .specification-info > div {
-      min-width: 375px;
-      justify-content: center;
-      align-items: center;
+      width: 100%;
+      margin-top: 0;
     }
   }
   
@@ -343,6 +274,7 @@ body {
   }
   
   #location-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -355,7 +287,6 @@ body {
   
   .location-header {
     flex-direction: row;
-    flex-wrap: wrap;
     height: max-content;
     text-align: center;
   }
@@ -372,141 +303,137 @@ body {
   }
   
   .location-info > div {
-    width: 45%;
+    width: 50%;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     line-height: 1.6;
-    margin: 0.5%;
-    padding: 0.5%;
     font-size: 1.5rem;
   }
-  
-  @media (min-width: 375px) {
+
+  .padding-left {
+    padding-left: 5px;
+  }
+
+  @media screen and (max-width: 600px) {
     .location-info > div {
-      min-width: 375px;
-      justify-content: center;
-      align-items: center;
+      width: 100%;
+      margin-top: 0;
     }
   }
   
   #booking-section {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0;
     background-image: url("/asset/images/garden.jpeg");
     background-attachment: fixed;
-   background-size: cover;
+    background-size: cover;
   }
   
-  .booking-form-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: max-content;
-    justify-content: center;
-    align-items: center;
+  /*Booking form*/
+  * {
+    box-sizing: border-box;
   }
   
-  .booking-form-header > h2 {
-    color: black;
-  }
-  
-  .full-width {
+  input[type=text] {
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .full-width > div {
-    width: 80%;
-    margin: 0%;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    line-height: 1.6;
-    font-size: 1.5rem;
-    padding: 1%;
-  }
-  
-  input[type=text], textarea {
-    width: 95%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
-    line-height: 1.6;
-  }
-  
-  input[type=submit] {
-    width: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  
-  input[type=reset] {
-    width: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
-  
-  .button {
-    background-color: orange;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
   }
   
   input[type=email] {
-    width: 95%;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
   }
   
   input[type=date] {
-    width: 95%;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
   }
   
   input[type=time] {
-    width: 95%;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
   }
-  
-  fieldset {
-    background-color: black;
-    border-radius: 10px;
+
+  input[type=textarea], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height: 200px;
   }
   
-  legend {
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
     background-color: orange;
-    color: black;
-    padding: 5px 5px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
     border-radius: 4px;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 600;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: grey;
+  }
+
+
+  
+  .container {
+    border-radius: 5px;
+    background-color: black;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
   }
   
   #footer {
@@ -522,11 +449,16 @@ body {
   }
   
   #footer > div {
-    margin: 10px;
-    padding: 10px;
     justify-content: center;
     align-items: center;
     line-height: 1.6;
+  }
+
+  @media screen and (max-width: 600px) {
+    #footer {
+      width: 100%;
+      margin-top: 0;
+    }
   }
   
   #footer > p {
@@ -535,7 +467,7 @@ body {
     text-transform:initial;
     color: black;
     line-height: 1.6;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px
   }
   
   
