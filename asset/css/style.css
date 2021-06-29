@@ -32,6 +32,8 @@ body {
     color: orange;
     text-transform: uppercase;
     text-align: center;
+    padding: 1rem;
+    line-height: 1.6;
   }
 
   p {
@@ -39,7 +41,7 @@ body {
     font-weight: normal;
     text-transform: initial;
     line-height: 1.4;
-    padding: 4px;
+    padding: 10px;
   }
     
     .header-container {
@@ -186,9 +188,10 @@ body {
     text-align: left;
   }
 
-  .description-image{
+  .description-box-image {
     width: 35%;
-    float: right;
+    margin-right: 0%;
+
   }
 
   .padding-left {
@@ -210,6 +213,7 @@ body {
       margin-top: 0;
     }
   }
+
   
   /*Specification section*/
   #specification {
@@ -225,11 +229,8 @@ body {
   }
   
   .specification-header {
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: max-content;
-    text-align: center;
-    margin-top: 4rem;
+    padding: 2rem;
+    margin-top: 1rem;
   }
   
   .specification-header > h2 {
@@ -254,7 +255,7 @@ body {
     border-radius: 6px;
     justify-content: center;
     align-items: center;
-    text-align: left;
+    text-align: center;
     line-height: 1.6;
     padding: 1%;
     font-size: 1.5rem;
@@ -321,7 +322,8 @@ body {
       margin-top: 0;
     }
   }
-  
+    
+  /*Booking form*/
   #booking-section {
     width: 100%;
     display: flex;
@@ -333,7 +335,7 @@ body {
     background-size: cover;
   }
   
-  /*Booking form*/
+  /*created on w3*/
   * {
     box-sizing: border-box;
   }
@@ -403,7 +405,7 @@ body {
   .container {
     border-radius: 5px;
     background-color: black;
-    padding: 20px;
+    padding: 30px;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
@@ -452,7 +454,16 @@ body {
     justify-content: center;
     align-items: center;
     line-height: 1.6;
+    padding-top: 16px;
   }
+.footer-paragraph {
+  font-weight: normal;
+  text-transform: initial;
+  line-height: 1.4;
+  padding: 10px;
+  font-size: 1rem;
+}
+
 
   @media screen and (max-width: 600px) {
     #footer {
