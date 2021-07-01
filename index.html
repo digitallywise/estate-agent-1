@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../asset/css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+   <link rel="stylesheet" href="../asset/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="header-container">
         <div id="to-let">
-            To Let <span class="span-orange">|</span> <span class="span-black">Rental Price <span class="span-white">4000</span> USD P<span class="span-orange">/</span>M
+            To Let <span class="span-orange">|</span> <span class="span-black"> Rental Price </span> <span class="span-white"> 4000 </span> USD P<span class="span-orange">/</span>M
         </div>
 
         <div class="header">
             <h1 class="heading-one">LUXURY VILLA FOR RENT IN ADDIS ABABA, ETHIOPIA</h1>
     </div>
     </div>
-    <div class="nav-container sticky">
-            <nav>
-                <ul>
-                    <li> <a href=" #to-let"> Home</a></li>
-                    <li> <a href="#description"> Description</a></li>
-                    <li> <a href="#specification"> Specification</a></li>
-                    <li> <a href="#location-container"> Location</a></li>
-                    <li> <a href="#booking-section"> Viewing</a></li>
-                    <li> <a href="#footer"> Contact info</a></li>
-                </ul>
-            </nav>
+
+    <div class="topnav sticky" id="myTopnav">
+      <a href="#to-let" class="active">Home</a>
+      <a href="#description">Description</a>
+      <a href="#specification">Specification</a>
+      <a href="#location-container">Location Information</a>
+      <a href="#booking-section">Viewing Appointment</a>
+      <a href="#footer">Contact Details</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
+    
 <!--new picture slider-->
     <div class="content-container">
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -107,31 +109,32 @@
        <div class="specification-info spec-image">
        <div>
         <img src="/asset/images/bedroom.png" alt="Bedroom">
-        <p>This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. </p>
+        <p>The property comprises fully furnished four spacious en suite bedrooms with modern deco. The master bedroom faces east with a patio door leading to the front garden. </p>
        </div>
        <div>
         <img src="/asset/images/livingroom.png" alt="Living room">
-        <p>This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. </p>
+        <p>There are two large fully furnished remarkable living rooms that would make you feel proud to welcome and entertain your family and friends or just seat comfortably and watch television.</p>
            
     </div>
     <div>
         <img src="/asset/images/kitchen.png" alt="kitchen">
-        <p>This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. </p>
+        <p>The two traditional and modern kitchens are large and fully equipped with modern and traditional appliances including pizza oven and BBQ grill.   
+        </p>
            
     </div>    
     <div>
       <img src="/asset/images/jacuzzi.png" alt="Jacuzzi icon by Montu Yadav from the Noun Project" >
-      <p>This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. </p>
+      <p>The three in one jacuzzi room is one of the great feature that this property offers. It comprises jacuzzi, steam room and shower with (telephone line, TV and bluetooth). </p>
            
     </div>
     <div>
       <img src="/asset/images/bathroom.png" alt="Bathroom">
-      <p>This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. </p>
+      <p>The four modern and spacious bathrooms are tiled with marbles and have large windows. Two of the bedroom's bath come with doors leading to dressing rooms.</p>
            
     </div>
     <div>
       <img src="/asset/images/toilet.png" alt="Toilet">
-      <p>This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. </p>
+      <p>There are four toilets, two of them combined with the bathrooms and the other two being without a shower or bath. These are modern toilets with modern basin and storage.   </p>
            
     </div>
     </div>
@@ -151,7 +154,7 @@
 
         <div class="padding-left">
             <h2 class="heading-two padding-top-25">Location Information</h2>
-            <p>This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. </p>
+            <p>This property is located in a very desirable residential area. British International school, Sandford American school, shopping malls, vagetable markets, the new train station, Cinemas and the riverside parks are all in close proximity. Journey to Bole airport, Merkato and Legehar would take no more than just 20 minutes drive. </p>
         </div>
 
 
@@ -160,14 +163,14 @@
         <!--booking form section-->
         <section id="booking-section">
             <div class="container">
-              <h2 class="heading-two">Book a Viewing Date</h2>
+              <h2 class="heading-two">Book a Viewing Appointment</h2>
               <form action="mailto:adam33_51@hotmail.com">
                 <div class="row">
                   <div class="col-25">
-                    <label for="fname">Full Name:</label>
+                    <label for="fullname">Full Name:</label>
                   </div>
                   <div class="col-75">
-                    <input type="text" id="firstname" name="firstname" placeholder="Your full name..">
+                    <input type="text" id="fullname" name="fullname" placeholder="Your full name..">
                   </div>
                 </div>
                 
@@ -186,7 +189,7 @@
                     <label for="date">Select Viewing Date: </label>
                   </div>
                   <div class="col-75">
-                    <input type="date" id="date" name="date" placeholder="Viewing Date.." required>
+                    <input type="date" id="date" name="date" required>
                   </div>
                 </div>
                 
@@ -196,7 +199,7 @@
                     <label for="time">Select time: </label>
                   </div>
                   <div class="col-75">
-                    <input type="time" id="time" name="date" placeholder="Viewing Time.." required>
+                    <input type="time" id="time" name="time" required>
                   </div>
                 </div>
 
@@ -227,6 +230,17 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
     
 </body>
 </html>
