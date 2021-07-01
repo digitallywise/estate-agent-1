@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../asset/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="header-container">
         <div id="to-let">
-            To Let <span class="span-orange">|</span> <span class="span-black">Rental Price <span class="span-white">4000</span> USD P<span class="span-orange">/</span>M
+            To Let <span class="span-orange">|</span> <span class="span-black">Rental Price </span> <span class="span-white">4000</span> USD P<span class="span-orange">/</span>M
         </div>
 
         <div class="header">
             <h1 class="heading-one">LUXURY VILLA FOR RENT IN ADDIS ABABA, ETHIOPIA</h1>
     </div>
     </div>
-    <div class="nav-container sticky">
+  <!--<div class="nav-container sticky">
             <nav>
                 <ul>
                     <li> <a href=" #to-let"> Home</a></li>
@@ -29,6 +30,17 @@
                     <li> <a href="#footer"> Contact info</a></li>
                 </ul>
             </nav>
+    </div>-->
+    <div id="myTopnav" class="topnav sticky">
+      <a href="index.html" class="active">Home</a>
+      <a href="#description">Description</a>
+      <a href="#specification">Specification</a>
+      <a href="#location-container">Location Information</a>
+      <a href="#booking-section">Viewing Appointment</a>
+      <a href="#footer">Contact Details</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 <!--new picture slider-->
     <div class="content-container">
@@ -50,7 +62,7 @@
                 <img class="d-block w-100" src="/asset/images/sidegarden.jpg" alt="Beautiful green area">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="/asset/images/mountainview.jpg" alt="Third slide">
+                <img class="d-block w-100" src="/asset/images/mountainview.jpg" alt="Mountain view">
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="/asset/images/roomdeco1.jpg" alt="Bedroom wall and ceiling">
@@ -151,7 +163,7 @@
 
         <div class="padding-left">
             <h2 class="heading-two padding-top-25">Location Information</h2>
-            <p>This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. This property comprises 4 super king size bedrooms with on suite bathrooms and dressing rooms. </p>
+            <p>The location is one of the desirable residential area with a breath taking view of mountain. Sandford international school, British International school, Shoping malls, vagetable markets, sheep markets and the new train station are some of the local amenities found in close proximity. Journy to Bole airport, meskel square and the river side park would take less than 30 minutes.   </p>
         </div>
 
 
@@ -160,14 +172,14 @@
         <!--booking form section-->
         <section id="booking-section">
             <div class="container">
-              <h2 class="heading-two">Book a Viewing Date</h2>
+              <h2 class="heading-two">Book a Viewing Appointment</h2>
               <form action="mailto:adam33_51@hotmail.com">
                 <div class="row">
                   <div class="col-25">
-                    <label for="fname">Full Name:</label>
+                    <label for="fullname">Full Name:</label>
                   </div>
                   <div class="col-75">
-                    <input type="text" id="firstname" name="firstname" placeholder="Your full name..">
+                    <input type="text" id="fullname" name="fullname" placeholder="Your full name..">
                   </div>
                 </div>
                 
@@ -186,7 +198,7 @@
                     <label for="date">Select Viewing Date: </label>
                   </div>
                   <div class="col-75">
-                    <input type="date" id="date" name="date" placeholder="Viewing Date.." required>
+                    <input type="date" id="date" name="date" required>
                   </div>
                 </div>
                 
@@ -196,7 +208,7 @@
                     <label for="time">Select time: </label>
                   </div>
                   <div class="col-75">
-                    <input type="time" id="time" name="date" placeholder="Viewing Time.." required>
+                    <input type="time" id="time" name="time" required>
                   </div>
                 </div>
 
@@ -227,6 +239,17 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
     
 </body>
 </html>
