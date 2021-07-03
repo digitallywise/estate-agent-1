@@ -88,7 +88,7 @@ p {
   line-height: 1.6;
   text-transform: uppercase;
 }
-
+/* The responsive navbar was created with w3 tutorial and slightly modified for best fit*/
 .topnav {
   overflow: hidden;
   background-color: orange;
@@ -116,6 +116,7 @@ p {
   display: none;
 }
 
+/*the sticky navbar extension is taken from https://gomakethings.com/how-to-create-a-sticky-navigation-with-only-css/  and i added z-index to it*/
 .sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -125,11 +126,9 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-
   .topnav a.icon {
     display: block;
   }
-
   .menu-actions {
     display: flex;
     justify-content: space-between;
@@ -166,7 +165,7 @@ p {
   }
 }
 
-
+/* content starts here*/
 .content-container {
   width: 100%;
   display: flex;
@@ -214,7 +213,7 @@ p {
 }
 
 .padding-top-25 {
-  padding-top: 34px;
+  padding-top: 80px;
 }
 
 .padding-bottom-25 {
@@ -251,7 +250,7 @@ p {
 }
 
 .specification-header {
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .specification-header>h2 {
@@ -346,19 +345,18 @@ p {
   }
 }
 
-/*Booking form*/
+/*Booking form was created with w3 tutorial and modified for own use- including the reset button which wasn't on the tutorial*/
 #booking-section {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
-  background-image: url("/asset/images/garden.jpeg");
+  background-image: url("/asset/images/sidegarden2.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
-/*created on w3*/
 * {
   box-sizing: border-box;
 }
@@ -431,7 +429,6 @@ input[type=reset] {
 
 }
 
-
 input[type=submit]:hover,
 input[type=reset]:hover {
   background-color: grey;
@@ -500,7 +497,7 @@ input[type=reset]:hover {
   text-align: center;
 }
 
-#footer>div {
+#footer > div {
   justify-content: center;
   align-items: center;
   line-height: 1.6;
