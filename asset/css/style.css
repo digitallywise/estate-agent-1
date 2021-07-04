@@ -60,7 +60,7 @@ p {
   justify-content: center;
 }
 
-#to-let {
+#luxvilla-logo {
   background-color: grey;
   color: white;
   font-size: 1rem;
@@ -229,7 +229,7 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  #description>div {
+  #description > div {
     width: 100%;
     margin-top: 0;
   }
@@ -253,7 +253,7 @@ p {
   margin-top: 4rem;
 }
 
-.specification-header>h2 {
+.specification-header > h2 {
   font-size: 1.3rem;
   font-weight: 500;
   color: black;
@@ -272,7 +272,7 @@ p {
   justify-content: center;
 }
 
-.specification-info>div {
+.specification-info > div {
   width: 33%;
   border-radius: 6px;
   justify-content: center;
@@ -325,7 +325,7 @@ p {
   justify-content: center;
 }
 
-.location-info>div {
+.location-info > div {
   width: 50%;
   justify-content: center;
   align-items: center;
@@ -339,7 +339,7 @@ p {
 }
 
 @media screen and (max-width: 600px) {
-  .location-info>div {
+  .location-info > div {
     width: 100%;
     margin-top: 0;
   }
@@ -519,7 +519,7 @@ input[type=reset]:hover {
   }
 }
 
-#footer>p {
+#footer > p {
   font-size: 1.1rem;
   font-weight: normal;
   text-transform: initial;
