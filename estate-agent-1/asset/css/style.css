@@ -7,6 +7,15 @@ body {
   font-weight: 100;
 }
 
+.sr-only {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .heading-one {
   text-transform: uppercase;
   color: orange;
@@ -352,7 +361,7 @@ p {
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0;
-  background-image: url("/asset/images/sidegarden2.jpg");
+  background-image: url("/estate-agent-1/asset/images/sidegarden2.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
