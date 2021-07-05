@@ -61,7 +61,7 @@ p {
 }
 
 #luxvilla-logo {
-  background-color: grey;
+  background-color: maroon;
   color: white;
   font-size: 1rem;
   width: 100%;
@@ -409,7 +409,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: orange;
+  background-color: maroon;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -419,7 +419,7 @@ input[type=submit] {
 }
 
 input[type=reset] {
-  background-color: orange;
+  background-color: maroon;
   color: white;
   padding: 12px 20px;
   border: none;
