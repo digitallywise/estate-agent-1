@@ -1,7 +1,7 @@
 # Table of Contents <a name="Home"></a>
 
-1. [About the project](#Abouttheproject)
-2. [Features](#Features)
+1. [About the project](#About)
+2. [Features](#Feactures)
 3. [Site Structure, mockup and colour scheme](#structure)
 4. [LUXURY VILLA FOR RENT IN ADDIS ABABA](#landing)
 5. [Features Left to implement](#Features-left)
@@ -11,7 +11,7 @@
 9. [Deployment](#Deployment)
 10. [Content](#Content)
 11. [Media](#Media)
-12. [Technologies used](#Resources-used)
+12. [Technologies used](#Technologies-used)
 13. [Credits](#Credits)
 
 
