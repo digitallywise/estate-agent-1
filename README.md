@@ -109,7 +109,7 @@ The footer section contains the general contact details such as address and P.O.
 - As I did not put a phone number for SEO reason I would have included a call button if I had more time
 
 **Social media profiles**
--Links to social media profiles
+- Links to social media profiles
 
 **Location map**
 - Add a location map
