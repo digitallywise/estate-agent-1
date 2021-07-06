@@ -167,8 +167,14 @@ This was created using W3c tutorial and further modified including adding the re
 
 ## Testing <a name="Testing"></a>
 
+### FlexBox System
+The Website is created using Flexbox system for its flexibility of creating rows, columns and aligning them without the need to use the float and position property to place an element.
 
-The website was continuously tested to make sure HML and CSS are valid as well as making sure the website is accessible. 
+It is fully tested on different screen sizes and is fully responsive. Please see the images below. 
+
+It was also continuously tested to make sure HML and CSS are valid as well as making sure it is accessible.
+
+![CSS validation Result](/asset/images/multi-device.jpg)
 
 
 ### HTML
