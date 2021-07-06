@@ -1,24 +1,21 @@
-
-
-
 # Table of Contents <a name="Home"></a>
 
-1. [About the project](#About)
+1. [About the project](#Abouttheproject)
 2. [Features](#Features)
-3. [Site Structure, mockup and colour scheme](#Site)
-4. [LUXURY VILLA FOR RENT IN ADDIS ABABA](#LUXURY)
-5. [Features Left to implement](#Features)
-6. [Stake holders of the Website’s Interest](#Stake)
-7. [Resources used to complete the project](#Resources)
+3. [Site Structure, mockup and colour scheme](#structure)
+4. [LUXURY VILLA FOR RENT IN ADDIS ABABA](#landing)
+5. [Features Left to implement](#Features-left)
+6. [Stake holders of the Website’s Interest](#Stake-holders)
+7. [Resources used to complete the project](#Resources-used)
 8. [Testing](#Testing)
 9. [Deployment](#Deployment)
 10. [Content](#Content)
 11. [Media](#Media)
-12. [Technologies used](#Technologies)
+12. [Technologies used](#Resources-used)
 13. [Credits](#Credits)
 
 
-# About the project <a name="About the project"></a>
+# About the project <a name="About"></a>
 Luxvillas is an Estate agent that promotes luxury villas for rent for its clients in Addis Ababa, Ethiopia through creation of dedicated websites that are optimised for search engine.
 
 The target audiences are foreign nationals such as investors who do business in the country, diplomats working in embassies and the African Union which has its headquarter in Addis Ababa, Ethiopia.  These particular audiences require a reliable information in English as well as a property that meets their family needs including safety, security and uninterrupted water and electric supply. This website exactly provides that by presenting handpicked property that suites their family needs, in a language they understand.
@@ -35,7 +32,7 @@ This banner contains the logo as well us the monthly rental price of the propert
 ### Looping picture slider/Carousel*
 The looping picture slider contains multiple images of the property and displays sequentially while still allowing users to take control through the carousel control “next and previous” button to flick through the property pictures without opening a popup window. 
 
-## Site Structure, layout mockup and colour scheme
+## Site Structure, layout mockup and colour scheme <a name="Structure"></a>
 The site structure was created using ‘xmind’ mind mapping application before taking the information to Indesign to do layout mockup.
 
  ![Site structure](/asset/images/structure.png)
@@ -53,7 +50,7 @@ The colour scheme was picked from the villas gate and from the first image of th
 
 [ Back to Table of Contents](#home)
 
-## LUXURY VILLA FOR RENT IN ADDIS ABABA  <a name="LUXURY VILLA FOR RENT IN ADDIS ABABA"></a>
+## LUXURY VILLA FOR RENT IN ADDIS ABABA  <a name="landing"></a>
 
 ### The landing page 
 - The landing page contains the header which explains what this website is all about as well as the type of villa and its location.
@@ -61,13 +58,13 @@ The colour scheme was picked from the villas gate and from the first image of th
 The carousel/picture slider sequentially displays large images fitting the screen horizontally to grab the user’s attention. 
 
 ![landing page](/asset/images/home.png)
-##  Description Section <a name="Description Section"></a>
+##  Description Section 
 
 This is the most important part of the website which describes the type of property Luxvillas are promoting through the use of languages that would trigger emotional response. These includes the security feature which often concerns foreigners as well as reassuring them about electric supply which often gets cut off and affects everyone in the country. The content is also written with SEO in mind and is used in the header, title and meta tag keywords.
 
 ![landing page](/asset/images/description.png)
 
-## Specification section <a name="Specification section"></a>
+## Specification section 
 
 The Specification section of the website is  uses icons to represent each feature of the property as well as describing each feature including the bedrooms, living room and jacuzzi giving them the full picture of the property.
 
@@ -75,14 +72,14 @@ The Specification section of the website is  uses icons to represent each featur
 
 
 
-##  Location section <a name="Location section"></a>
+##  Location section 
 
 The location section gives the potential tenant/user local amenities such as  transport services, shopping malls, schools, cinemas and parks to help them make a decision. 
 
 ![Location](/asset/images/location.png)
 
 
-## Form to allow users to book a viewing appointment <a name="Form to allow users to book a viewing appointment"></a>
+## Form to allow users to book a viewing appointment 
 
 Each of the above sections are laid out in a way that would lead them to this section to create an enquiry and finally to rent the property. The form allows a user to enter their details and select a suitable date and time to book a viewing appointment. The form is using [Formspree](https://formspree.io/) API to submit the enquiry.  
 
@@ -99,7 +96,7 @@ The footer section contains the general contact details such as address and P.O.
 [ Back to Table of Contents](#home)
 
 
-##  Features Left to implement <a name="Features Left to implement"></a>
+##  Features Left to implement <a name="Features-left"></a>
 
 
 **Videos** 
@@ -122,7 +119,7 @@ The footer section contains the general contact details such as address and P.O.
 
 
 
-## Stake holders of the Website’s Interest <a name="Stake holders of the Website’s Interest"></a>
+## Stake holders of the Website’s Interest <a name="Stake-holders"></a>
 
 
 
@@ -139,7 +136,7 @@ The footer section contains the general contact details such as address and P.O.
 
 
 
-## Resources used to complete the project <a name="Resources used to complete the project"></a>
+## Resources used to complete the project <a name="Resources-used"></a>
 
 
 ### Responsive navigation bar
@@ -250,7 +247,7 @@ Location image directly linked to Bole, Addis Ababa area picture on unsplash.com
 [ Back to Table of Contents](#home)
 
 
-## Technologies used <a name="Technologies used"></a>
+## Technologies used <a name="Technologies-used"></a>
 
 - GitHub for hosting the project
 - Gitpod for authoring/developing the project
